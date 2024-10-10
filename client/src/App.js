@@ -5,7 +5,6 @@ import "react-toastify/dist/ReactToastify.css";
 // Lazy load the components
 const HomePage = lazy(() => import("./pages/HomePage"));
 const Policy = lazy(() => import("./pages/Policy"));
-const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Pagenotfound = lazy(() => import("./pages/Pagenotfound"));
 const Register = lazy(() => import("./pages/Auth/Register"));
@@ -36,7 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/product/:slug" element={<ProductDetails />} />
-          <Route path="/categories" element={<Categories />} />
+          <Route path="/category" element={<Categories />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<CheckOut />} />
           <Route path="/category/:slug" element={<CategoryProduct />} />
@@ -60,7 +59,6 @@ function App() {
 
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/policy" element={<Policy />} />
           <Route path="*" element={<Pagenotfound />} />

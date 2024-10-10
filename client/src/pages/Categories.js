@@ -13,7 +13,7 @@ const Categories = () => {
       className="categories-layout"
       style={{
         minHeight: "100vh",
-        backgroundImage: `url(${categoryBackground})`,
+        // backgroundImage: `url(${categoryBackground})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",

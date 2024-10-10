@@ -42,18 +42,6 @@ const Header = () => {
             className="inline-flex items-center text-sm font-semibold text-gray-800 hover:text-gray-900"
           >
             Home
-            <span>
-              <ChevronDown className="ml-2 h-4 w-4" />
-            </span>
-          </NavLink>
-          <NavLink
-            to="/about"
-            className="inline-flex items-center text-sm font-semibold text-gray-800 hover:text-gray-900"
-          >
-            About
-            <span>
-              <ChevronDown className="ml-2 h-4 w-4" />
-            </span>
           </NavLink>
           <div className="relative">
             <NavLink
@@ -73,7 +61,7 @@ const Header = () => {
               <li>
                 <NavLink
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                  to="/categories"
+                  to="/category"
                 >
                   All Categories
                 </NavLink>
@@ -182,12 +170,6 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink
-            to="/about"
-            className="block rounded-md px-3 py-2 text-base font-semibold text-gray-800 hover:bg-gray-100"
-          >
-            About
-          </NavLink>
-          <NavLink
             to="/contact"
             className="block rounded-md px-3 py-2 text-base font-semibold text-gray-800 hover:bg-gray-100"
           >
@@ -211,7 +193,7 @@ const Header = () => {
               <li>
                 <NavLink
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                  to="/categories"
+                  to="/category"
                 >
                   All Categories
                 </NavLink>

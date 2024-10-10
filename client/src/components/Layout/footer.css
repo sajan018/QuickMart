@@ -1,17 +1,15 @@
 .footer {
-  color: white;
+  color: black;
   padding: 25px;
-  background: black;
-  
+  border-top: 0.1px solid grey;
+  margin-top: 20px;
 }
 
 .footer a {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-family: cursive;
+  font-weight: 400;
   padding: 10px;
 }
 
-.footer a:hover {
-  color: antiquewhite;
-  border-bottom: 1px solid white;
-}
