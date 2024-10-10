@@ -6,7 +6,7 @@ import "../styles/search.css";
 const Search = () => {
   const [values, setValues] = useSearch();
   return (
-    <>
+    <div>
       <Header />
       <h3 className="bg-yellow-300 rounded-lg p-2 w-[100px] flex justify-center items-center mx-5 my-2">
         <u className="text-green-900 font-sans font-semibold">
@@ -18,7 +18,7 @@ const Search = () => {
       <Layout title={"Search results"}>
         <div className="container">
           <div className="text-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            <div className="grid grid-cols-1 max-w-[1000px] mx-auto sm:grid-cols-2 md:grid-cols-3">
               {values.results.map((p) => (
                 <div className="card m-2" key={p._id}>
                   <img
@@ -47,7 +47,7 @@ const Search = () => {
           </div>
         </div>
       </Layout>
-    </>
+    </div>
   );
 };
 
